@@ -10,7 +10,7 @@ app.get("/",function(req,res) {
 
 app.post("/",function(req,res) {
   const query=req.body.cityName;
-   const url="https://community-open-weather-map.p.rapidapi.com/weather?q="+query+"&units=metric&rapidapi-key=";
+   const url="https://community-open-weather-map.p.rapidapi.com/weather?q="+query+"&units=metric&rapidapi-key=53c201490dmsh2ba548f9e251f5dp19386cjsn89483fe565c3";
    https.get(url,function(response) {
      console.log(response);
  response.on("data",function(data) {
